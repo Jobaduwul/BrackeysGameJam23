@@ -38,7 +38,7 @@ public class HealthManager : MonoBehaviour
         //according to health, the full hearts are being filled
         for(int i = 0; i < health; i++) 
         {
-            if(healthPercentage < 40.0f)
+            if(healthPercentage < 40.0f  && healthPercentage > 0f)
             {
                 hearts[i].sprite = redHeart;
             }

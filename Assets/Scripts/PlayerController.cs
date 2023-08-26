@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float verticalSpeed;
     public GameObject shipGo;
     public Rigidbody shipRb;
-    int xRange = 1;
+    int xRange = 18;
     // Start is called before the first frame update
     void Start()
     {

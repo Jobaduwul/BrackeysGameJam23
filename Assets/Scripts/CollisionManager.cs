@@ -9,6 +9,8 @@ public class CollisionManager : MonoBehaviour
     public AudioClip crashSound;
     public AudioSource crashAudio;
 
+    public GameObject hitEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,10 @@ public class CollisionManager : MonoBehaviour
             if(HealthManager.health <= 0 )
             {
                 Debug.Log("Game Over. Final Score: " + gameManager.score);
-                Destroy(player);
+                Destroy(player, 0.1f);
+                GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+                Destroy(effect, 0.5f);
+                
             }
             else
             {
