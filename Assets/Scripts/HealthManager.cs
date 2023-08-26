@@ -32,7 +32,8 @@ public class HealthManager : MonoBehaviour
 
         healthPercentage = ((float)health / maxHealth) * 100.0f;
 
-        Debug.Log(healthPercentage);
+        //temporarily commenting this to show some other stats
+        //Debug.Log("Health: " + healthPercentage);
 
         //according to health, the full hearts are being filled
         for(int i = 0; i < health; i++) 
