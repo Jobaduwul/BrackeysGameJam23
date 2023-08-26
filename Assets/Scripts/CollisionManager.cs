@@ -6,6 +6,8 @@ public class CollisionManager : MonoBehaviour
 {
     public GameObject player;
     public GameManager gameManager;
+    public AudioClip crashSound;
+    public AudioSource crashAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,8 @@ public class CollisionManager : MonoBehaviour
     {
       if (other.CompareTag("Enemy"))
         {
+            //crashAudio.PlayOneShot(crashSound);
+
             Debug.Log("Asteroid hit");
             HealthManager.health--;
             Debug.Log("Health: " + HealthManager.health);
@@ -31,6 +35,7 @@ public class CollisionManager : MonoBehaviour
             if(HealthManager.health <= 0 )
             {
                 Debug.Log("Game Over. Final Score: " + gameManager.score);
+                Destroy(player);
             }
             else
             {
@@ -38,6 +43,7 @@ public class CollisionManager : MonoBehaviour
                 Debug.Log("Player Health: " + HealthManager.health);
                 Debug.Log("Score: " + gameManager.score);
             }
+            Destroy(other.gameObject);
         }
     }
 }
