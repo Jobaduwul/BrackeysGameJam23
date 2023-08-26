@@ -23,6 +23,12 @@ public class CollisionManager : MonoBehaviour
       if (other.CompareTag("Enemy"))
         {
             Debug.Log("Asteroid hit");
+            HealthManager.health--;
+
+            if(HealthManager.health <= 0 )
+            {
+                Debug.Log("Game Over");
+            }
         }
     }
 }
