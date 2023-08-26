@@ -134,3 +134,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 3544892627388994619}
   topBound: 3
+  gameManager: {fileID: 0}
