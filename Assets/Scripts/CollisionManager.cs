@@ -10,6 +10,8 @@ public class CollisionManager : MonoBehaviour
     public AudioSource crashAudio;
 
     public GameObject hitEffect;
+    public GameObject megaHitEffect;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,16 +32,18 @@ public class CollisionManager : MonoBehaviour
             //crashAudio.PlayOneShot(crashSound);
 
             Debug.Log("Asteroid hit");
+            GameObject asteroidHit = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(asteroidHit, 0.5f);
             HealthManager.health--;
             Debug.Log("Health: " + HealthManager.health);
 
 
-            if(HealthManager.health <= 0 )
+            if(HealthManager.health <= 0 )          // Game Over Explosion
             {
                 Debug.Log("Game Over. Final Score: " + gameManager.score);
                 Destroy(player, 0.1f);
-                GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-                Destroy(effect, 0.5f);
+                GameObject effect = Instantiate(megaHitEffect, transform.position, Quaternion.identity);
+                Destroy(effect, 0.8f);
                 
             }
             else
