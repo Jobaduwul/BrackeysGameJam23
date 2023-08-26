@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float verticalSpeed;
     public GameObject shipGo;
     public Rigidbody shipRb;
+    int xRange = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,14 @@ public class PlayerController : MonoBehaviour
     {
         hInput = -Input.GetAxis("Horizontal");
         transform.Translate(new Vector3(hInput, 0, 0) * horizontalSpeed * Time.deltaTime);
+
+        if (transform.position.x < -xRange)
+        {
+            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x > xRange)
+        {
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
     }
 }
