@@ -36,7 +36,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnSensor()
     {
-        sensorSpawnPos = new Vector3(0, 0, 0);
+        sensorSpawnPos = new Vector3(0, -1, 0);
         Instantiate(sensorPrefab, sensorSpawnPos, sensorPrefab.transform.rotation);
     }
 }
