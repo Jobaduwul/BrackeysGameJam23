@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     //show score in PauseMenu and GameOver
     public TextMeshProUGUI pauseMenuScore;
     public TextMeshProUGUI gameOverScore;
+    public TextMeshProUGUI highScoreText;
 
     public bool isDead = false;
 
@@ -35,8 +36,10 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("HighScore", multipliedScore);
             highScore = PlayerPrefs.GetInt("HighScore", 0);
+            highScoreText.text = highScore.ToString();
         }
 
+        highScoreText.text = highScore.ToString();
         Debug.Log(highScore);
     }
 
