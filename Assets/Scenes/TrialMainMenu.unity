@@ -388,7 +388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 14233ef77f1d5684992f291a30093948, type: 3}
+  m_Texture: {fileID: 2800000, guid: 1f27dd60f781a01468c84df609bfedb0, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92437005}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab124a1eca5897c438fe330949d15ce5, type: 3}
   m_Name: 

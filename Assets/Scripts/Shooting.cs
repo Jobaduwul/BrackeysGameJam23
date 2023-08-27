@@ -27,23 +27,37 @@ public class Shooting : MonoBehaviour
     private float nextFire2Time = 0f;
     private float nextFire3Time = 0f;
 
+    public AudioSource FireAudio1;
+    public AudioSource FireAudio2;
+    public AudioSource FireAudio3;
+    public AudioClip PewPew1;
+    public AudioClip PewPew2;
+    public AudioClip PewPew3;
+
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButton("Fire1") && Time.time >= nextFireTime)
         {
+            FireAudio1.clip = PewPew1;
+            FireAudio1.Play();
             nextFireTime = Time.time + fireRate;
             Shoot();
         }
 
         if (Input.GetButton("Fire2") && Time.time >= nextFire2Time)
         {
+            FireAudio2.clip = PewPew2;
+            FireAudio2.Play();
             nextFire2Time = Time.time + fire2Rate;
             ShootTwice();
         }
 
-        if (Input.GetButton("Fire3") && Time.time >= nextFire3Time)
+        if (Input.GetKeyDown("space") && Time.time >= nextFire3Time)
         {
+            FireAudio3.clip = PewPew3;
+            FireAudio3.Play();
             nextFire3Time = Time.time + fire3Rate;
             MegaShoot();
         }

@@ -1898,8 +1898,14 @@ MonoBehaviour:
   fire3Prefab: {fileID: 7132610901008707624, guid: 41e73c88cddd4e640bd1c59484f7728e, type: 3}
   fireForce: 50
   fireRate: 0.1
-  fire2Rate: 1
-  fire3Rate: 2
+  fire2Rate: 2
+  fire3Rate: 4
+  FireAudio1: {fileID: 8308357324448367905, guid: 883825039270c3244a2869a7fc1101ff, type: 3}
+  FireAudio2: {fileID: 605379920034200367, guid: 71234e321fcb2ea49a4acd9b376a247f, type: 3}
+  FireAudio3: {fileID: -3985565678258895951, guid: 41e73c88cddd4e640bd1c59484f7728e, type: 3}
+  PewPew1: {fileID: 8300000, guid: f22a2b90eb697be49bc193af84732e9b, type: 3}
+  PewPew2: {fileID: 8300000, guid: 4a4cd4825fd1d204aa2735aec49ef0eb, type: 3}
+  PewPew3: {fileID: 8300000, guid: ca1f6634d1fd26c49bbb5acbd946dd0e, type: 3}
 --- !u!1 &1131748060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,7 +2033,7 @@ MonoBehaviour:
   spawnPos: {x: 0, y: 0, z: 0}
   spawnRange: 77
   startDelay: 0.69
-  spawnInterval: 0.09
+  spawnInterval: 0.01
   sensorSpawnInterval: 1
 --- !u!1 &1226209832
 GameObject:
