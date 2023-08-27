@@ -8,7 +8,8 @@ public class CollisionManager : MonoBehaviour
 {
     public GameObject player;
     public GameManager gameManager;
-    public AudioClip crashSound;
+    public AudioClip smallCrashSound;
+    public AudioClip oppenheimerCrashSound;
     public AudioSource crashAudio;
 
     public GameObject hitEffect;
@@ -34,8 +35,7 @@ public class CollisionManager : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            //crashAudio.PlayOneShot(crashSound);
-
+            
             Debug.Log("Asteroid hit");
             GameObject asteroidHit = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(asteroidHit, 0.5f);
@@ -46,6 +46,7 @@ public class CollisionManager : MonoBehaviour
             if (HealthManager.health <= 0)          // Game Over Explosion
             {
                 gameManager.isDead = true;
+                gameManager.PlayOppenheimerSound();
                 Debug.Log("Game Over. Final Score: " + gameManager.score);
                 Destroy(player, 0.1f);
                 GameObject effect = Instantiate(megaHitEffect, transform.position, Quaternion.identity);
@@ -57,6 +58,9 @@ public class CollisionManager : MonoBehaviour
                 // Display current health and score
                 Debug.Log("Player Health: " + HealthManager.health);
                 Debug.Log("Score: " + gameManager.score);
+
+                crashAudio.clip = smallCrashSound;
+                crashAudio.Play();
             }
             Destroy(other.gameObject);
         }
