@@ -523,7 +523,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563485009}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -600}
+  m_LocalPosition: {x: 0, y: 0, z: -594}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -534,7 +534,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54.52, y: -60.5}
+  m_AnchoredPosition: {x: -22, y: -60.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &656566334
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   crashSound: {fileID: 8300000, guid: 7dfa253635d90154e977406a2da10e91, type: 3}
   crashAudio: {fileID: 0}
   hitEffect: {fileID: 4861334179755943055, guid: 37cc2187d70d663469786acbcb4f0e3a, type: 3}
-  megaHitEffect: {fileID: 0}
+  megaHitEffect: {fileID: 3605127195356639355, guid: d69b17dc39d11114a87e4815be785045, type: 3}
   GameOverCanvas: {fileID: 656566334}
 --- !u!65 &1049278858
 BoxCollider:
@@ -4377,9 +4377,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
+  - {fileID: 1874873336}
   - {fileID: 1049278851}
   - {fileID: 761232954}
   - {fileID: 1177758252}
-  - {fileID: 1874873336}
   - {fileID: 1995987999}
   - {fileID: 1265542693}
