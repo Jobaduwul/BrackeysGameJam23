@@ -3,7 +3,13 @@ guid: 8d00b429fc7273d498deb214ccff827c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - scoreText: {instanceID: 0}
+  - pauseMenuScore: {instanceID: 0}
+  - gameOverScore: {instanceID: 0}
+  - highScoreText: {instanceID: 0}
+  - oppenheimerCrashSound: {fileID: 8300000, guid: 774ebc5c074ce4695b7cc310fbd44087, type: 3}
+  - crashAudio: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

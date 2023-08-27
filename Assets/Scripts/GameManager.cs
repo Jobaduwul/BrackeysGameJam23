@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
 
     public bool isDead = false;
 
+    public AudioClip oppenheimerCrashSound;
+    public AudioSource crashAudio;
+
     // Update is called once per frame
     void Update()
     {
@@ -48,5 +51,11 @@ public class GameManager : MonoBehaviour
         score += amount;
         Debug.Log("Score: " + score);
         Debug.Log("Health: " + HealthManager.health);
+    }
+
+    public void PlayOppenheimerSound()
+    {
+        crashAudio.clip = oppenheimerCrashSound;
+        crashAudio.Play();
     }
 }
