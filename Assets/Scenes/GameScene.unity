@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44816732, g: 0.49818426, b: 0.5755579, a: 1}
+  m_IndirectSpecularColor: {r: 0.44816786, g: 0.49818498, b: 0.5755587, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &93294646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 93294647}
+  m_Layer: 0
+  m_Name: MegaFirePoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &93294647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93294646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0587, y: -0.0331, z: -0.0004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1049278854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &305996359
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,63 +424,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390115009}
   m_CullTransparentMesh: 1
---- !u!1001 &407722023
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1858.5187
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1787890655285366739, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605127195356639355, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-      propertyPath: m_Name
-      value: OppenheimerExplosion
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d69b17dc39d11114a87e4815be785045, type: 3}
 --- !u!1 &434775017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,11 +1354,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895063540}
   m_CullTransparentMesh: 1
---- !u!1 &950909786 stripped
+--- !u!1 &930639975
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3605127195356639355, guid: d69b17dc39d11114a87e4815be785045, type: 3}
-  m_PrefabInstance: {fileID: 407722023}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930639976}
+  m_Layer: 0
+  m_Name: MegaFirePoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930639976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930639975}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0976, y: 0.0002, z: 0.0001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1049278854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +1654,21 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c9b9543192dfe7409d202dac669951e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2099874572}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c9b9543192dfe7409d202dac669951e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 930639976}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c9b9543192dfe7409d202dac669951e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 93294647}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c9b9543192dfe7409d202dac669951e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1400023583}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c9b9543192dfe7409d202dac669951e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282717522}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c9b9543192dfe7409d202dac669951e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1252990294}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c9b9543192dfe7409d202dac669951e, type: 3}
       insertIndex: -1
@@ -1717,7 +1732,7 @@ MonoBehaviour:
   crashSound: {fileID: 8300000, guid: 7dfa253635d90154e977406a2da10e91, type: 3}
   crashAudio: {fileID: 0}
   hitEffect: {fileID: 4861334179755943055, guid: 37cc2187d70d663469786acbcb4f0e3a, type: 3}
-  megaHitEffect: {fileID: 950909786}
+  megaHitEffect: {fileID: 0}
   GameOverCanvas: {fileID: 656566334}
 --- !u!65 &1049278858
 BoxCollider:
@@ -1872,11 +1887,18 @@ MonoBehaviour:
   firePoint: {fileID: 1907204004}
   leftFirePoint: {fileID: 1506869588}
   rightFirePoint: {fileID: 2099874572}
+  megaFirePoint1: {fileID: 930639976}
+  megaFirePoint2: {fileID: 93294647}
+  megaFirePoint3: {fileID: 1400023583}
+  megaFirePoint4: {fileID: 1282717522}
+  megaFirePoint5: {fileID: 1252990294}
   firePrefab: {fileID: 460157630700045355, guid: 883825039270c3244a2869a7fc1101ff, type: 3}
   fire2Prefab: {fileID: 4361176030440952654, guid: 71234e321fcb2ea49a4acd9b376a247f, type: 3}
+  fire3Prefab: {fileID: 7132610901008707624, guid: 41e73c88cddd4e640bd1c59484f7728e, type: 3}
   fireForce: 50
   fireRate: 0.1
   fire2Rate: 1
+  fire3Rate: 2
 --- !u!1 &1131748060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,6 +2314,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247693116}
   m_CullTransparentMesh: 1
+--- !u!1 &1252990293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252990294}
+  m_Layer: 0
+  m_Name: MegaFirePoint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1252990294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252990293}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0895, y: 0.003, z: 0.0001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1049278854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1265542691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,6 +2395,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1282717521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282717522}
+  m_Layer: 0
+  m_Name: MegaFirePoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282717522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282717521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0572, y: -0.0334, z: -0.0005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1049278854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1348224619
 GameObject:
@@ -2548,6 +2632,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuCanvas: {fileID: 563485009}
+--- !u!1 &1400023582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1400023583}
+  m_Layer: 0
+  m_Name: MegaFirePoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1400023583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400023582}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0031, y: -0.072, z: -0.0009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1049278854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425475946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,4 +4383,3 @@ SceneRoots:
   - {fileID: 1874873336}
   - {fileID: 1995987999}
   - {fileID: 1265542693}
-  - {fileID: 407722023}
