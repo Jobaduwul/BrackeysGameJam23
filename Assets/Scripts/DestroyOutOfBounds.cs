@@ -23,7 +23,7 @@ public class DestroyOutOfBounds : MonoBehaviour
         if (screenPos.x < 0 || screenPos.x > Screen.width ||
             screenPos.y < 0 || screenPos.y > Screen.height)
         {
-            if(gameObject.CompareTag("Sensor"))
+            if(gameObject.CompareTag("Sensor") && gameManager.isDead==false)
             {
                 gameManager.IncrementScore(1);
             }
