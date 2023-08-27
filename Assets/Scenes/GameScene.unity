@@ -578,7 +578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &656566335
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2326,6 +2326,7 @@ MonoBehaviour:
   multiplier: 37
   pauseMenuScore: {fileID: 1668843698}
   gameOverScore: {fileID: 1648233205}
+  highScoreText: {fileID: 1425475948}
   isDead: 0
 --- !u!4 &1265542693
 Transform:
