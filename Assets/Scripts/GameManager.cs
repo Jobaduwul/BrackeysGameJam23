@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int multiplier = 43;
     private int multipliedScore = 0;
     private int highScore = 0;
+    private bool shouldUpdateHighScore = true;
 
     //show score in PauseMenu and GameOver
     public TextMeshProUGUI pauseMenuScore;
@@ -31,16 +32,19 @@ public class GameManager : MonoBehaviour
         pauseMenuScore.text = multipliedScore.ToString("0");
         gameOverScore.text = multipliedScore.ToString("0");
 
-        //setting high score
-        highScore = PlayerPrefs.GetInt("HighScore", 0);
-
-        if(multipliedScore > highScore)
+        if( shouldUpdateHighScore )
         {
-            PlayerPrefs.SetInt("HighScore", multipliedScore);
+            //setting high score
             highScore = PlayerPrefs.GetInt("HighScore", 0);
-            highScoreText.text = highScore.ToString();
-        }
 
+            if (multipliedScore > highScore)
+            {
+                PlayerPrefs.SetInt("HighScore", multipliedScore);
+                highScore = PlayerPrefs.GetInt("HighScore", 0);
+                highScoreText.text = highScore.ToString();
+            }
+        }
+        
         highScoreText.text = highScore.ToString();
         Debug.Log(highScore);
     }
@@ -57,4 +61,13 @@ public class GameManager : MonoBehaviour
         crashAudio.clip = oppenheimerCrashSound;
         crashAudio.Play();
     }
+
+    public void ResetHighScore()
+    {
+        PlayerPrefs.SetInt("HighScore", 0);
+        highScore = 0;
+        highScoreText.text = highScore.ToString();
+        shouldUpdateHighScore = false;
+    }
+
 }
