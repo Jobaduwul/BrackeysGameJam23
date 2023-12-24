@@ -38,6 +38,7 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetButton("Fire1") && Time.time >= nextFireTime)
         {
             FireAudio1.clip = PewPew1;
@@ -45,6 +46,8 @@ public class Shooting : MonoBehaviour
             nextFireTime = Time.time + fireRate;
             Shoot();
         }
+        
+        
 
         if (Input.GetButton("Fire2") && Time.time >= nextFire2Time)
         {
@@ -61,6 +64,7 @@ public class Shooting : MonoBehaviour
             nextFire3Time = Time.time + fire3Rate;
             MegaShoot();
         }
+        */
     }
 
     void Shoot()
@@ -110,4 +114,36 @@ public class Shooting : MonoBehaviour
 
     }
 
+    public void SingleFire()
+    {
+        if (Time.time >= nextFireTime)
+        {
+            FireAudio1.clip = PewPew1;
+            FireAudio1.Play();
+            nextFireTime = Time.time + fireRate;
+            Shoot();
+        }
+    }
+
+    public void DoubleFire()
+    {
+        if (Time.time >= nextFire2Time)
+        {
+            FireAudio2.clip = PewPew2;
+            FireAudio2.Play();
+            nextFire2Time = Time.time + fire2Rate;
+            ShootTwice();
+        }
+    }
+
+    public void UltimateFire()
+    {
+        if (Time.time >= nextFire3Time)
+        {
+            FireAudio3.clip = PewPew3;
+            FireAudio3.Play();
+            nextFire3Time = Time.time + fire3Rate;
+            MegaShoot();
+        }
+    }
 }

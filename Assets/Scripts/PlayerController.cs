@@ -17,10 +17,10 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        hInput = -Input.GetAxis("Horizontal");
         transform.Translate(new Vector3(hInput, 0, 0) * horizontalSpeed * Time.deltaTime);
+        hInput = 0;
 
         if (transform.position.x < -xRange)
         {
@@ -30,5 +30,14 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+    }
+
+    public void MoveLeft()
+    {
+        hInput = 1; 
+    }
+    public void MoveRight()
+    {
+        hInput = -1;
     }
 }
